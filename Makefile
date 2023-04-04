@@ -6,11 +6,13 @@
 #    By: ndesprez <ndesprez@student.42nice.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/03 14:05:02 by ndesprez          #+#    #+#              #
-#    Updated: 2023/04/03 14:08:47 by ndesprez         ###   ########.fr        #
+#    Updated: 2023/04/04 15:28:35 by ndesprez         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SOURCES	= ft_printf.c
+SOURCES	= ft_printf.c\
+chartypes.c\
+inttypes.c
 
 NAME = libftprintf.a
 
