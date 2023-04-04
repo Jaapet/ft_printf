@@ -6,11 +6,11 @@
 /*   By: ndesprez <ndesprez@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 14:14:04 by ndesprez          #+#    #+#             */
-/*   Updated: 2023/04/04 14:37:18 by ndesprez         ###   ########.fr       */
+/*   Updated: 2023/04/04 18:00:43 by ndesprez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 // %c
 int	ft_putchar(char c)

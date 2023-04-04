@@ -6,11 +6,11 @@
 /*   By: ndesprez <ndesprez@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 14:08:37 by ndesprez          #+#    #+#             */
-/*   Updated: 2023/04/04 17:56:45 by ndesprez         ###   ########.fr       */
+/*   Updated: 2023/04/04 18:00:56 by ndesprez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 static int	printer(char c, va_list params)
 {
