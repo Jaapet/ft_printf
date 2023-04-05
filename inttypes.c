@@ -6,7 +6,7 @@
 /*   By: ndesprez <ndesprez@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 14:55:26 by ndesprez          #+#    #+#             */
-/*   Updated: 2023/04/05 10:36:13 by ndesprez         ###   ########.fr       */
+/*   Updated: 2023/04/05 10:46:56 by ndesprez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 // %d %i %u
 int	ft_putnbr(long nb)
 {
-	if (nb == -2147483648)
-		return (write(1, "-2147483648", 11), 11);
 	if (nb < 0)
 		return (ft_putchar('-') + ft_putnbr(nb * -1));
 	if (nb > 9)
