@@ -6,7 +6,7 @@
 /*   By: ndesprez <ndesprez@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 14:08:37 by ndesprez          #+#    #+#             */
-/*   Updated: 2023/04/04 18:00:56 by ndesprez         ###   ########.fr       */
+/*   Updated: 2023/04/05 10:42:21 by ndesprez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static int	printer(char c, va_list params)
 	else if (c == 'u')
 		return (ft_putnbr((unsigned int)va_arg(params, unsigned int)));
 	else if (c == 'x' || c == 'X')
-		return (ft_puthex((int)va_arg(params, int), c));
+		return (ft_puthex((unsigned int)va_arg(params, unsigned int), c));
 	else if (c == '%')
 		return (ft_putchar('%'));
 	return (0);

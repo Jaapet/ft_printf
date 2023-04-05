@@ -6,14 +6,14 @@
 /*   By: ndesprez <ndesprez@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 14:55:26 by ndesprez          #+#    #+#             */
-/*   Updated: 2023/04/04 18:00:50 by ndesprez         ###   ########.fr       */
+/*   Updated: 2023/04/05 10:36:13 by ndesprez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
 // %d %i %u
-int	ft_putnbr(int nb)
+int	ft_putnbr(long nb)
 {
 	if (nb == -2147483648)
 		return (write(1, "-2147483648", 11), 11);
@@ -26,7 +26,7 @@ int	ft_putnbr(int nb)
 }
 
 // %p %x %X
-int	ft_puthex(long long nb, char maj)
+int	ft_puthex(unsigned long long nb, char maj)
 {
 	char		*base;
 
@@ -36,9 +36,6 @@ int	ft_puthex(long long nb, char maj)
 		base = "0123456789ABCDEF";
 	if (nb == 0)
 		return (ft_putchar(base[0]));
-	if (nb < 0)
-		return (ft_putchar('-') + ft_puthex((nb * -1) / 16, maj)
-			+ ft_putchar(base[(nb * -1) % 16]));
 	if (nb != 0)
 	{
 		if (nb / 16 != 0)
